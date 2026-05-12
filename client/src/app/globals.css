@@ -2,14 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --background: #FAFAF9;
+  --primary-dark: #111827;
+  --secondary-dark: #1F2937;
+  --gold: #C8A96B;
+  --soft-gold: #E5D3B3;
+  --border: #E7E5E4;
+  --muted: #6B7280;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: #F8FAFC;
-  color: #111827;
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);
+  color: var(--primary-dark);
+  font-family: var(--font-inter);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-space);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+a {
+  text-decoration: none;
 }
